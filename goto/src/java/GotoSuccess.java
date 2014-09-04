@@ -1,14 +1,13 @@
 public class GotoSuccess {
-
-
+	
 	public static void main(String[] args) {
-		one: System.out.println("one");
-		two: System.out.println("two");
+		one: System.out.print("goto ");
+		two: System.out.print("Java");
 		goto four;
-		three: System.out.println("three");
+		three: System.out.print("2014");
 		goto five;
-		four: System.out.println("four");
+		four: System.out.print("Zone ");
 		goto three;
-		five: System.out.println("five");
+		five: System.out.print("!");
 	}
 }

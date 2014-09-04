@@ -1,0 +1,9 @@
+com.sun.tools.javac.code.Flags.GENERATEDCONSTR(long) 68719476736
+
+Integer.toString(268435457, 2)
+
+Long.toBinaryString(69793218560L)
+
+"a".compareTo("b")
+
+System.out.println(System.getProperties())

@@ -17,6 +17,7 @@ import com.sun.tools.javac.Main;
 class ProcessHelper {
 	
 	private String className;
+	private String version;
 	
 	
 	
@@ -29,9 +30,15 @@ class ProcessHelper {
 		StringWriter output = new StringWriter();
 		if(classFile().exists() && !classFile().delete())
 			throw new RuntimeException("Unable to delete old classfile");
-		
+		System.out.println("COMPILE:");
 		int result = Main.compile(
 				new String[] { 
+				    "-bootclasspath",
+				    System.getProperty("sun.boot.class.path"),
+				    "-source",
+				    System.getProperty("java.specification.version"),
+            "-target",
+            System.getProperty("java.specification.version"),
 						"-d", 
 						classFolder(),
 						"src/java/" + className() + ".java" }, 
@@ -57,6 +64,7 @@ class ProcessHelper {
 	}
 	
 	public ProcessResult run() throws IOException, InterruptedException {
+	  System.out.println("RUN:");
 		final Process process = Runtime.getRuntime().exec("java -cp " + classFolder() + " " +  className());
 		final BufferedReader output = new BufferedReader(new InputStreamReader(process.getInputStream()));
 		final BufferedReader error = new BufferedReader(new InputStreamReader(process.getErrorStream()));
@@ -65,6 +73,7 @@ class ProcessHelper {
 		while((line = output.readLine())!=null) {
 			builder.append(line);
 			builder.append('\n');
+			System.out.println(line);
 		}
 		
 		while((line = error.readLine())!=null) {
