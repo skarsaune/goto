@@ -4,6 +4,9 @@
 This sample code and utility scripts may be used to test goto functionality 
 in Java.
 
+Slides: http://www.slideshare.net/MartinSkarsaune/goto-java
+Abstract + video: http://2014.javazone.no/presentation.html?id=32012fc6
+
 Prerequesites:
 
 1. Java 8 installed.
@@ -15,5 +18,3 @@ Prerequesites:
 
 5. For help with required changes to OpenJDK contact martin@skarsaune.net
 
-Slides: http://www.slideshare.net/MartinSkarsaune/goto-java
-Abstract + video: http://2014.javazone.no/presentation.html?id=32012fc6
