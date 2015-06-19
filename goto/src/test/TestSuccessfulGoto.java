@@ -32,7 +32,7 @@ public class TestSuccessfulGoto {
 	
 	@Test
 	public void testRuntimeBehaviour() {
-		executionResult.assertOutputText("goto JavaZone 2014!");
+		executionResult.assertOutputText("goto DEVOXX UK!");
 	}
 
 }

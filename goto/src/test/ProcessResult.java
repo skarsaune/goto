@@ -33,7 +33,8 @@ class ProcessResult {
 	
 	
 	public void assertOutputText(final String textSnippet) {
-		Assert.assertTrue("Expected output to contain \"" + textSnippet + "\"", this.getOutput().contains(textSnippet));
+		String output = this.getOutput();
+    Assert.assertTrue("Expected output to contain \"" + textSnippet + "\" but was:\n" + output, output.contains(textSnippet));
 	}
 
 }
