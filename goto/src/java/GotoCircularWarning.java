@@ -4,9 +4,9 @@ public class GotoCircularWarning {
     one: System.out.print("goto ");
     two: System.out.print("Java");
     goto four;
-    three: System.out.print("2014");
+    three: System.out.print("2016");
     goto five;
-    four: System.out.print("Zone ");
+    four: System.out.print("One ");
     goto three;
     five: System.out.println("!");
     goto one;//forms infinite loop

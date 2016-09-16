@@ -2,11 +2,11 @@ public class GotoSuccess {
 	
 	public static void main(String[] args) {
 		one: System.out.print("goto ");
-		two: System.out.print("DEV");
+		two: System.out.print("Java");
 		goto four;
-		three: System.out.print("UK");
+		three: System.out.print("2016");
 		goto five;
-		four: System.out.print("OXX ");
+		four: System.out.print("One ");
 		goto three;
 		five: System.out.print("!");
 	}

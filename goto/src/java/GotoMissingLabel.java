@@ -5,9 +5,9 @@ public class GotoMissingLabel {
     one: System.out.print("goto ");
     two: System.out.print("Java");
     goto six;
-    three: System.out.print("2014");
+    three: System.out.print("2016");
     goto five;
-    four: System.out.print("Zone ");
+    four: System.out.print("One ");
     goto three;
     five: System.out.print("!");
   }
