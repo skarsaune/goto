@@ -32,7 +32,7 @@ public class TestSuccessfulGoto {
 	
 	@Test
 	public void testRuntimeBehaviour() {
-		executionResult.assertOutputText("goto JavaOne 2016!");
+		executionResult.assertOutputText("goto JFokus 2017!");
 	}
 
 }
