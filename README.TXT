@@ -1,6 +1,8 @@
 
 				goto java;
 
+TODO after Jfokus: will publish a fork of openjdk or patch file of the actual compiler changes. It would make more sense to come back here once that is in place.
+
 This sample code and utility scripts may be used to test goto functionality 
 in Java.
 
