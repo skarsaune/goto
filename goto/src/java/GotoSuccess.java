@@ -6,7 +6,7 @@ public class GotoSuccess {
 		goto four;
 		three: System.out.print("2017");
 		goto five;
-		four: System.out.print("Fokus ");
+		four: System.out.print("fokus ");
 		goto three;
 		five: System.out.print("!");
 	}
